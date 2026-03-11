@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Игра</title>
+    <title>Pixel Farmer Life</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,24 +11,25 @@
         <div id="ui">
             <div id="carrotCounter">🥕 <span id="carrotCount">0</span></div>
             <div id="coinCounter">🪙 <span id="coinCount">0</span></div>
+            <div id="carrotCounter">🐺 <span id="skinCount">0</span></div>
         </div>
         <div id="dialog"></div>
         <div id="tradeMenu"></div>
         <div id="skinMenu">
             <h3>🎨 Гардероб</h3>
-            <p>Выберите цвет одежды:</p>
             <div id="colorOptions">
-                <button onclick="changeSkinColor('#1565c0')" style="background:#1565c0">Синий</button>
-                <button onclick="changeSkinColor('#2e7d32')" style="background:#2e7d32">Зелёный</button>
-                <button onclick="changeSkinColor('#c62828')" style="background:#c62828">Красный</button>
-                <button onclick="changeSkinColor('#6a1b9a')" style="background:#6a1b9a">Фиолетовый</button>
-                <button onclick="changeSkinColor('#ef6c00')" style="background:#ef6c00">Оранжевый</button>
-                <button onclick="changeSkinColor('#424242')" style="background:#424242">Чёрный</button>
+                <button style="background:#1565c0" onclick="changeSkinColor('#1565c0')">Синий</button>
+                <button style="background:#2e7d32" onclick="changeSkinColor('#2e7d32')">Зелёный</button>
+                <button style="background:#c62828" onclick="changeSkinColor('#c62828')">Красный</button>
+                <button style="background:#7b1fa2" onclick="changeSkinColor('#7b1fa2')">Фиолетовый</button>
+                <button style="background:#ef6c00" onclick="changeSkinColor('#ef6c00')">Оранжевый</button>
+                <button style="background:#000000" onclick="changeSkinColor('#000000')">Чёрный</button>
             </div>
             <button onclick="closeSkinMenu()">Закрыть (I)</button>
         </div>
         <div id="transition"></div>
     </div>
-    <script src="game.js"></script>
+    
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

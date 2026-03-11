@@ -1,0 +1,2 @@
+в терминале выполнить python -m http.server 8000
+и запустить http://localhost:8000/
