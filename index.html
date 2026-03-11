@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Игра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui">
+            <div id="carrotCounter">🥕 <span id="carrotCount">0</span></div>
+            <div id="coinCounter">🪙 <span id="coinCount">0</span></div>
+        </div>
+        <div id="dialog"></div>
+        <div id="tradeMenu"></div>
+        <div id="skinMenu">
+            <h3>🎨 Гардероб</h3>
+            <p>Выберите цвет одежды:</p>
+            <div id="colorOptions">
+                <button onclick="changeSkinColor('#1565c0')" style="background:#1565c0">Синий</button>
+                <button onclick="changeSkinColor('#2e7d32')" style="background:#2e7d32">Зелёный</button>
+                <button onclick="changeSkinColor('#c62828')" style="background:#c62828">Красный</button>
+                <button onclick="changeSkinColor('#6a1b9a')" style="background:#6a1b9a">Фиолетовый</button>
+                <button onclick="changeSkinColor('#ef6c00')" style="background:#ef6c00">Оранжевый</button>
+                <button onclick="changeSkinColor('#424242')" style="background:#424242">Чёрный</button>
+            </div>
+            <button onclick="closeSkinMenu()">Закрыть (I)</button>
+        </div>
+        <div id="transition"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
